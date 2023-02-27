@@ -1,0 +1,175 @@
+body {
+    background-color: rgba(243, 123, 123, 0.404);
+    background-image: url(https://images.pexels.com/photos/13306877/pexels-photo-13306877.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+h1 {
+    color: rgba(109, 12, 148, 0.582);
+    font-size: 65px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #9ddd8002;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #da083d;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+  }
+  .title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: #d088ecd3;
+    --color-2: #b1e3f8bd;
+    --color-3: #e4a9a8c7;
+  }
+  
+  .title-word-2 {
+    --color-1: #94daecc2;
+    --color-2: #d691ebda;
+    --color-3: #5a21578e;
+  }
+  
+  .title-word-3 {
+    --color-1: #accfcbd3;
+    --color-2: #e4a9a8be;
+    --color-3: #accfcbd3;
+  }
+  
+  .title-word-4 {
+    --color-1: #f05151d0;
+    --color-2: #80e7abcb;
+    --color-3: #e4a9a8d2;
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+  /* Here are just some visual styles. 🖌 */
+  
+  .container {
+    display: grid;
+    place-items: center;  
+    text-align: center;
+    height: 60vh
+  }
+  
+  .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 8.5vw;
+    text-transform: uppercase;
+  }
+  .motion-images {
+    padding: 0;
+    height: 434px;
+    margin-bottom: 30px;
+  }
+  .motion-images img {
+    border-radius: 10px;
+    position: absolute;
+    top: 160%;
+    left: 50%;
+  }
+  .motion-images img.first {
+    transform: translate(-24%, -50%);
+    -webkit-animation: move1 10s ease-in-out infinite;
+    animation: move1 10s ease-in-out infinite;
+  }
+  .motion-images img.second {
+    transform: translate(-104%, -76%) scale(0.48);
+    -webkit-animation: move2 10s ease-in-out infinite;
+    animation: move2 10s ease-in-out infinite;
+  }
+  .motion-images img.third {
+    transform: translate(-104%, -24%) scale(0.48);
+    -webkit-animation: move3 10s ease-in-out infinite;
+    animation: move3 10s ease-in-out infinite;
+  }
+  @keyframes move1 {
+    0% {
+      transform: translate(-24%, -50%);
+    }
+    10% {
+      transform: translate(-104%, -24%) scale(0.48);
+    }
+    33% {
+      transform: translate(-104%, -24%) scale(0.48);
+    }
+    40% {
+      transform: translate(-104%, -76%) scale(0.48);
+    }
+    66% {
+      transform: translate(-104%, -76%) scale(0.48);
+    }
+    75% {
+      transform: translate(-24%, -50%);
+    }
+  }
+  @keyframes move2 {
+    0% {
+      transform: translate(-104%, -76%) scale(0.48);
+    }
+    10% {
+      transform: translate(-24%, -50%);
+    }
+    33% {
+      transform: translate(-24%, -50%);
+    }
+    40% {
+      transform: translate(-104%, -24%) scale(0.48);
+    }
+    66% {
+      transform: translate(-104%, -24%) scale(0.48);
+    }
+    75% {
+      transform: translate(-104%, -76%) scale(0.48);
+    }
+  }
+  @keyframes move3 {
+    0% {
+      transform: translate(-104%, -24%) scale(0.48);
+    }
+    10% {
+      transform: translate(-104%, -76%) scale(0.48);
+    }
+    33% {
+      transform: translate(-104%, -76%) scale(0.48);
+    }
+    40% {
+      transform: translate(-24%, -50%);
+    }
+    66% {
+      transform: translate(-24%, -50%);
+    }
+    75% {
+      transform: translate(-104%, -24%) scale(0.48);
+    }
+  }
+
+  
+
+  
